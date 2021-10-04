@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="Email"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/emailRegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button_emailRegi"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:text="CHECK YOUR EMAIL"
+                app:backgroundTint="#FBD382" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="Password"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/passRegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/button_passwordRegi"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:text="CHECK YOUR PASSWORD"
+                app:backgroundTint="#FBD382" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/checkRegi"
+            android:layout_width="376dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:text="Check"
+            app:backgroundTint="#62B87F" />
+
+        <Button
+            android:id="@+id/creation"
+            android:layout_width="283dp"
+            android:layout_height="124dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:background="@drawable/round_button"
+            android:text="CREATE AN ACCOUNT"
+            app:backgroundTint="#7DAC8D" />
+    </LinearLayout>
+
+</LinearLayout>

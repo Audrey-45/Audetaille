@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Button_Cottons"
+            android:layout_width="391dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="COTTONS"
+            android:drawableRight="@drawable/ctmx"
+            android:drawablePadding="-15sp"
+            android:paddingRight="52sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="#6FC1C1BA" />
+
+        <Button
+            android:id="@+id/Button_TeeShirts"
+            android:layout_width="391dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="TEE-SHIRTS"
+            android:drawableRight="@drawable/mixedts"
+            android:drawablePadding="-15sp"
+            android:paddingRight="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="#6FC1C1BA" />
+
+        <Button
+            android:id="@+id/Button_LimitedEdition"
+            android:layout_width="391dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="LIMITED EDITION"
+            android:drawableRight="@drawable/bag1_little"
+            android:paddingRight="52sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="#6FC1C1BA" />
+
+
+        <Button
+            android:id="@+id/Button_All"
+            android:layout_width="391dp"
+            android:layout_height="117dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/all"
+            android:paddingRight="32sp"
+            android:text="ALL"
+            android:gravity="left|center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="#6FC1C1BA" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

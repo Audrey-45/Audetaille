@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.HomePage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:gravity="center|center_horizontal|center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center|center_horizontal|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:shadowColor="#313435"
+            android:text="WELCOME"
+            android:textColor="#C9FC9380"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/header_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="87dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:indeterminateTint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_horizontal|center_vertical"
+        android:gravity="center|center_horizontal|center_vertical">
+
+        <Button
+            android:id="@+id/button_home_page"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="START"
+            android:textSize="25dp"
+            app:backgroundTint="#134151" />
+    </LinearLayout>
+
+</LinearLayout>
