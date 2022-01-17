@@ -20,7 +20,7 @@ import android.widget.Toast;
 import com.example.project.R;
 import com.example.project.controller.Control;
 import com.example.project.model.CartArticles;
-import com.example.project.model.Tshirt;
+import com.example.project.model.Ticket;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 ArrayList<CartArticles> listCartArticles = control.getAllArticles();
-                ArrayList<Tshirt> listTs = control.getAllTshirt();
+                ArrayList<Ticket> listTs = control.getAllTshirt();
 
                 //All item in menu
 

@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.example.project.R;
 import com.example.project.controller.Control;
 import com.example.project.model.CartArticles;
-import com.example.project.model.Tshirt;
+import com.example.project.model.Ticket;
 
 import java.util.ArrayList;
 
@@ -229,7 +229,7 @@ public class Cart extends AppCompatActivity {
     private void cartTS()
     {
         tsImg = new ArrayList<TSImge>();
-        ArrayList<Tshirt> listTS = control.getAllTshirt();
+        ArrayList<Ticket> listTS = control.getAllTshirt();
 
         for(int i=0; i<listTS.size(); i++) {
 

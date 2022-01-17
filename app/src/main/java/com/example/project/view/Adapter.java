@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.example.project.R;
 import com.example.project.controller.Control;
 import com.example.project.model.CartArticles;
-import com.example.project.model.Tshirt;
+import com.example.project.model.Ticket;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -165,7 +165,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
     public void removeItem(int position, View itemView) {
         this.control = Control.getInstance(this.context);
         ArrayList<CartArticles> listCartArticles = control.getAllArticles();
-        ArrayList<Tshirt> listTshirt = control.getAllTshirt();
+        ArrayList<Ticket> listTshirt = control.getAllTshirt();
 
         //search for articles in database
         int id =0;

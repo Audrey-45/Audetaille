@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Tshirt {
+public class Ticket {
 
     //proprieties
     private String color;
@@ -21,7 +21,7 @@ public class Tshirt {
      * @param size
      * @param name
      */
-    public Tshirt(String color, String size, String name)
+    public Ticket(String color, String size, String name)
     {
         this.color = color;
         this.size = size;

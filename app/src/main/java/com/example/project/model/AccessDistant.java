@@ -96,8 +96,8 @@ public class AccessDistant implements AsyncResponse {
                     String color = info.getString("color");
                     String size = info.getString("size");
                     String name = info.getString("name");
-                    Tshirt tshirt = new Tshirt(color, size, name);
-                    control.setTshirt(tshirt);
+                    Ticket ticket = new Ticket(color, size, name);
+                    control.setTshirt(ticket);
                 }
                 else {
                     //get all article
@@ -152,13 +152,13 @@ public class AccessDistant implements AsyncResponse {
                         Log.d("allTs", "******************" + message[1]);
 
                         JSONArray jSonInfo = new JSONArray(message[1]);
-                        ArrayList<Tshirt> allTshirt = new ArrayList<Tshirt>();
+                        ArrayList<Ticket> allTshirt = new ArrayList<Ticket>();
                         for (int k = 0; k < jSonInfo.length(); k++) {
                             JSONObject info = new JSONObject(jSonInfo.get(k).toString());
                             String color = info.getString("color");
                             String size = info.getString("size");
                             String name = info.getString("name");
-                            Tshirt tshirt = new Tshirt(color, size, name);
+                            Ticket tshirt = new Ticket(color, size, name);
                             allTshirt.add(k,tshirt);
                         }
                         control.setAllTshirt(allTshirt);

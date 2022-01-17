@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.example.project.R;
 import com.example.project.controller.Control;
 import com.example.project.model.CartArticles;
-import com.example.project.model.Tshirt;
+import com.example.project.model.Ticket;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -170,11 +170,11 @@ public class AdapterTs extends RecyclerView.Adapter<AdapterTs.MyViewHolder>{
     public void removeItem(int position, View itemView) {
         this.control = Control.getInstance(this.context);
         ArrayList<CartArticles> listCartArticles = control.getAllArticles();
-        ArrayList<Tshirt> listTshirt = control.getAllTshirt();
-        Tshirt tshirt = new Tshirt(articlesList.get(position).getColor(), articlesList.get(position).getSize(),
+        ArrayList<Ticket> listTshirt = control.getAllTshirt();
+        Ticket ticket = new Ticket(articlesList.get(position).getColor(), articlesList.get(position).getSize(),
                 articlesList.get(position).getLogo());
 
-        control.delTs(tshirt, position);
+        control.delTs(ticket, position);
         articlesList.remove(position);
 
         notifyItemRemoved(position);

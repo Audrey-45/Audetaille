@@ -13,7 +13,7 @@ import com.example.project.R;
 import com.example.project.controller.Control;
 import com.example.project.model.CartArticles;
 import com.example.project.model.Favorite;
-import com.example.project.model.Tshirt;
+import com.example.project.model.Ticket;
 
 import java.util.ArrayList;
 

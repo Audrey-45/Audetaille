@@ -6,8 +6,7 @@ import com.example.project.model.Acc;
 import com.example.project.model.AccessDistant;
 import com.example.project.model.CartArticles;
 import com.example.project.model.Favorite;
-import com.example.project.model.Tshirt;
-import com.example.project.view.ArticleDetails;
+import com.example.project.model.Ticket;
 
 import org.json.JSONArray;
 
@@ -19,13 +18,13 @@ public final class Control {
     private static CartArticles cartarticle;
     private static Acc account;
     private static Favorite fav;
-    private static Tshirt tshirt;
+    private static Ticket ticket;
     private static AccessDistant accessDistant;
     private static Context context;
     private ArrayList<CartArticles> allArticles = new ArrayList<CartArticles>();
     private ArrayList<Acc> allAccount = new ArrayList<Acc>();
     private ArrayList<Favorite> allFavorites = new ArrayList<Favorite>();
-    private ArrayList<Tshirt> allTshirt = new ArrayList<Tshirt>();
+    private ArrayList<Ticket> allTicket = new ArrayList<Ticket>();
 
 
     /**
@@ -115,16 +114,16 @@ public final class Control {
      * get All all Tshirt
      * @return allTshirt
      */
-    public ArrayList<Tshirt> getAllTshirt() {
-        return allTshirt;
+    public ArrayList<Ticket> getAllTshirt() {
+        return allTicket;
     }
 
     /**
      * set All all Tshirt
      * @param allTshirt
      */
-    public void setAllTshirt(ArrayList<Tshirt> allTshirt) {
-        this.allTshirt = allTshirt;
+    public void setAllTshirt(ArrayList<Ticket> allTshirt) {
+        this.allTicket = allTshirt;
     }
 
     /**
@@ -153,14 +152,14 @@ public final class Control {
 
     /**
      * delete customs t-shirt
-     * @param tshirt
+     * @param ticket
      * @param position
      */
-    public void delTs(Tshirt tshirt, int position)
+    public void delTs(Ticket ticket, int position)
     {
-        accessDistant.sendTs("delTs", tshirt.convertToJSONArray());
-        allTshirt.remove(position);
-        setAllTshirt(allTshirt);
+        accessDistant.sendTs("delTs", ticket.convertToJSONArray());
+        allTicket.remove(position);
+        setAllTshirt(allTicket);
     }
 
     /**
@@ -227,9 +226,9 @@ public final class Control {
      */
     public void AddTshirt(String color, String size, String name)
     {
-        tshirt = new Tshirt(color,size,name);
-        allTshirt.add(tshirt);
-        accessDistant.sendTs("saveTs", tshirt.convertToJSONArray());
+        ticket = new Ticket(color,size,name);
+        allTicket.add(ticket);
+        accessDistant.sendTs("saveTs", ticket.convertToJSONArray());
     }
 
 
@@ -264,9 +263,9 @@ public final class Control {
      * set Customs tshirt
      * @param tshirt
      */
-    public void setTshirt(Tshirt tshirt)
+    public void setTshirt(Ticket tshirt)
     {
-        Control.tshirt = tshirt;
+        Control.ticket = tshirt;
     }
 
 
